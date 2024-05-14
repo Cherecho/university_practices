@@ -127,5 +127,10 @@ int main() {
 
     free(records);
 
+    // Wait for user input before closing the console.
+    printf("Press ENTER to exit.");
+    while (getchar() != '\n');
+    getchar();
+
     return 0;
 }
